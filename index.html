@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Diego Boat Cruise - Captian's Checklist</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="sandiego">
+    <h1>Captian's Checklist</h1>
+
+    <form action="form-handler.php" method="post">
+        <h2>Vessel Information</h2>
+        <div class="form-group">
+            <label for="vessel-name">Vessel Name:</label>
+            <input type="text" id="vessel-name" name="vessel-name">
+        </div>
+        <div class="form-group">
+            <label for="vessel-type">Vessel Type:</label>
+            <input type="text" id="vessel-type" name="vessel-type">
+        </div>
+
+        <h2>Pre-Departure Checklist</h2>
+        <div class="checklist">
+            <div class="checklist-item">
+                <label for="life-jackets">Life Jackets:</label>
+                <input type="checkbox" id="life-jackets" name="life-jackets"> Inspected and in good condition
+            </div>
+            <div class="checklist-item">
+                <label for="flares">Flares:</label>
+                <input type="checkbox" id="flares" name="flares"> Inspected and in good condition
+            </div>
+            <div class="checklist-item">
+                <label for="fire-extinguisher">Fire Extinguisher:</label>
+                <input type="checkbox" id="fire-extinguisher" name="fire-extinguisher"> Inspected and in good condition
+            </div>
+            <div class="checklist-item">
+                <label for="first-aid-kit">First Aid Kit:</label>
+                <input type="checkbox" id="first-aid-kit" name="first-aid-kit"> Inspected and in good condition
+            </div>
+            <div class="checklist-item">
+                <label for="navigation-lights">Navigation Lights:</label>
+                <input type="checkbox" id="navigation-lights" name="navigation-lights"> Functioning properly
+            </div>
+            <div class="checklist-item">
+                <label for="engine-oil">Engine Oil:</label>
+                <input type="checkbox" id="engine-oil" name="engine-oil"> Level checked and sufficient
+            </div>
+            <div class="checklist-item">
+                <label for="coolant-level">Coolant Level:</label>
+                <input type="checkbox" id="coolant-level" name="coolant-level"> Level checked and sufficient
+            </div>
+            <div class="checklist-item">
+                <label for="fuel-level">Fuel Level:</label>
+                <input type="checkbox" id="fuel-level" name="fuel-level"> Level checked and sufficient
+            </div>
+            <div class="checklist-item">
+                <label for="propeller">Propeller:</label>
+                <input type="checkbox" id="propeller" name="propeller"> Inspected and in good condition
+            </div>
+            <div class="checklist-item">
+                <label for="bilge">Bilge:</label>
+                <input type="checkbox" id="bilge" name="bilge"> Clean and dry
+            </div>
+        </div>
+
+        <h2>Departure Checklist</h2>
+        <div class="checklist">
+            <div class="checklist-item">
+                <label for="crew-briefing">Crew Briefing:</label>
+                <input type="checkbox" id="crew-briefing" name="crew-briefing"> Completed and understood
+            </div>
+            <div class="checklist-item">
+                <label for="vessel-preparation">Vessel Preparation:</label>
+                <input type="checkbox" id="vessel-preparation" name="vessel-preparation"> Completed and ready for departure
+            </div>
+            <div class="checklist-item">
+                <label for="weather-forecast">Weather Forecast:</label>
+                <input type="checkbox" id="weather-forecast" name="weather-forecast"> Checked and understood
+            </div>
+        </div>
+
+        <h2>Comments or Other Important Information</h2>
+        <div class="form-group">
+            <label for="other">Other:</label>
+            <input type="text" id="other" name="other">
+
+        <input type="submit" value="Submit Checklist">
+    </form>
+</body>
+</html>
